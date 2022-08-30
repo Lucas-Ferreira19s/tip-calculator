@@ -173,11 +173,13 @@ p {
     margin: .5rem;
   }
   .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     padding: 1rem;
   }
   .left {
+    flex: 2;
     gap: 1rem;
   }
 
@@ -192,6 +194,7 @@ p {
   }
 
   .right{
+    flex: 1;
     margin-top: .7rem;
     padding: 15px;
   }
