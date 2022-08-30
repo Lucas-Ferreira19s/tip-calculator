@@ -73,5 +73,5 @@ function reset(){
     inputBillFun()
     inputPeople.value = '1';
     inputPeopleFun()
-    customTip.value = ''
+    customTip.value = '';
 }

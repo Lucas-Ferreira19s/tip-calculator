@@ -1,154 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Space Mono', monospace;
-    background-color: hsl(185, 41%, 84%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-header{
-    margin: 50px;
-}
-.container{
-    width: 900px;
-    height: 410px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: hsl(0, 0%, 100%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.left{
-    color: hsl(186, 14%, 43%);
-    display: grid;
-    gap: 30px;
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.left .grid{
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
+header {
+  margin: 3.12rem;
 }
-.left .grid .button{
-    font-family: 'Space Mono', monospace;
-    padding: 5px;
-    font-size: 24px;
-    border-radius: 5px;
-    border: none;
-    background-color: hsl(183, 100%, 15%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
+.container {
+  max-width: 56rem;
+  height: 25.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  padding: 1.8rem;
+  border-radius: 1.25rem;
+  background-color: hsl(0, 0%, 100%);
 }
-.left .grid .button:hover{
-    background-color: hsl(185, 41%, 84%);
-    color: hsl(183, 100%, 15%);
+
+.left {
+  color: hsl(186, 14%, 43%);
+  display: grid;
+  gap: 1.8rem;
+}
+.left .grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.left .grid .button {
+  font-family: "Space Mono", monospace;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.left .grid .button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
 }
 .active {
-    background-color: hsl(172, 67%, 45%) !important;
-    color: hsl(183, 100%, 15%) !important;
+  background-color: hsl(172, 67%, 45%) !important;
+  color: hsl(183, 100%, 15%) !important;
 }
 
-#custom{
-    background-color: hsl(189, 41%, 97%);
-    color: hsl(183, 100%, 15%);
-    border: none;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Space Mono', monospace;
-    border-radius: 7px;
+#custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border-radius: 7px;
 }
 #custom:focus,
-#custom:hover{
-    outline: 2px solid hsl(172, 67%, 45%);
+#custom:hover {
+  outline: 2px solid hsl(172, 67%, 45%);
 }
 
-.input{
-    display: flex;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 7px;
+.input {
+  display: flex;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 7px;
 }
 .left .input:focus,
 .left .input:hover {
-    outline: 2px solid hsl(172, 67%, 45%);
+  outline: 2px solid hsl(172, 67%, 45%);
 }
 
-.left .input input::placeholder{
-    color: hsl(184, 14%, 56%);
+.left .input input::placeholder {
+  color: hsl(184, 14%, 56%);
 }
-.left .input input{
-    background-color: transparent;
-    color: hsl(183, 100%, 15%);
-    width: 100%;
-    text-align: end;
-    padding: 5px;
-    font-size: 24px;
-    font-family: "Space Mono", monospace;
-    border: none;
-    cursor: pointer;
+.left .input input {
+  background-color: transparent;
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  text-align: end;
+  padding: 5px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border: none;
+  cursor: pointer;
 }
 .left .input input:focus,
-.left .input input:hover{
-    outline: none;
+.left .input input:hover {
+  outline: none;
 }
 
-.left .input img{
-    margin: auto;
-    padding: 5px;
+.left .input img {
+  margin: auto;
+  padding: 5px;
 }
 
-.right{
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 12px;
-    padding: 30px;
-    color: hsl(0, 0%, 100%);
+.right {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  padding: 30px;
+  color: hsl(0, 0%, 100%);
 }
-.right-grid{
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
+.right-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
 }
-.right small{
+.right small {
+  display: block;
+  color: hsl(184, 14%, 56%);
+  font-size: 14px;
+}
+.right .amont {
+  color: hsl(172, 67%, 45%);
+  font-size: 36px;
+  text-align: end;
+}
+.reset {
+  grid-column: 1/3;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  height: 2.8rem;
+  width: 100%;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 90vh;
+  }
+  header {
+    margin: 2.5rem;
+  }
+  .container {
+    max-width: 50rem;
+    height: 25rem;
+    padding: 1.4rem;
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    margin: .5rem;
+  }
+  .container {
     display: block;
-    color: hsl(184, 14%, 56%);
-    font-size: 14px;
-}
-.right .amont{
-    color: hsl(172, 67%, 45%);
-    font-size: 36px;
-    text-align: end;
-}
-.reset{
-    grid-column: 1/3;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    font-family: "Space Mono", monospace;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
-    font-size: 22px;
-    height: 45px;
-    width: 100%;
-    margin-top: 100px;
-    cursor: pointer;
-    transition: all ease .3s;
-}
-.reset:hover{
-    background-color: hsl(185, 41%, 84%);
-}
+    height: 100%;
+    padding: 1rem;
+  }
+  .left {
+    gap: 1rem;
+  }
 
-p{
-    margin-bottom: 5px;
-    font-size: 15px;
-    display: block;
+  .left .input img{
+    padding: 0 5px;
+  }
+
+  .left .input input{
+    padding: 2px 5px;
+    font-size: 20px;
+
+  }
+
+  .right{
+    margin-top: .7rem;
+    padding: 15px;
+  }
+
+  .right .amont{
+    font-size: 30px;
+  }
+
+  .right small{
+    font-size: 12px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px 5px !important;
+  }
+  .button{
+    font-size: 20px !important;
+  }
+
+  .reset{
+    margin-top: 10px;
+  }
 }
